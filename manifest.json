@@ -1,0 +1,43 @@
+{
+  "manifest_version": 1,
+  "name": "Spy Password",
+  "version": "0.0.1",
+  "description": "Show your password, if your forgot saved password or watching the enteried characters.",
+  "background": {
+    "scripts": ["js/jquery-2.1.4.min.js", "js/background.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "http://*/*",
+    "https://*/*",
+    "storage"
+  ],
+  "content_scripts": [{
+    "matches": [
+      "http://*/*",
+      "https://*/*"
+    ],
+    "js": [
+      "js/jquery-2.1.4.min.js",
+      "js/insert.js"
+    ],
+    "run_at": "document_end"
+  }],
+  "browser_action": {
+    "default_title": "SpyPassword"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "web_accessible_resources": [
+    "js/spy.js"
+  ],
+  "options_page": "options.html",
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true,
+    "open_in_tab": true
+  }
+}

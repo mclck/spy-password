@@ -1,0 +1,47 @@
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  #bg {
+    top: 50px;
+    position: relative;
+    background: #eee;
+    /*max-width: 1280px;*/
+  }
+
+  #simpleBorder {
+    position: absolute;
+    border: thin solid #1A237E;
+    left: 50px;
+    top: 50px;
+  }
+
+  #simpleTitle {
+    position: absolute;
+    display: block;
+    top: -27px;
+    left: 100px;
+    background: #eee;
+    z-index: 100;
+  }
+
+  #simpleContent {
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    top: 10%;
+    left: 5%;
+    font-size: 30px;
+  }
+
+  #about {
+    position: relative;
+    margin: auto;
+    text-align: left;
+    max-width: 1920px;
+    min-height: 800px;
+    max-height: 800px;
+    z-index: 33;
+  }
